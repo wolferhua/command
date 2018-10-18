@@ -25,7 +25,7 @@ func (c *Help) SetFlags() {
 }
 
 func (c *Help) Init() {
-	name := strings.TrimSpace(flag.Arg(1))
+	name := strings.TrimSpace(flag.Arg(0))
 	if len(name) != 0 {
 		c.Name = name
 	} else {
