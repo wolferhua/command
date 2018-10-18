@@ -23,5 +23,5 @@ func (c *Test) Run() {
 }
 
 func (c *Test) SetFlags() {
-	c.BoolVar(& (c.B), "b", false, "bool test")
+	c.BoolVar(&c.B, "b", false, "bool test")
 }

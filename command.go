@@ -59,7 +59,7 @@ func Run() bool {
 		if ok {
 			//参数设置
 			c.SetFlags()
-			flag.Parse()
+			flag.CommandLine.Parse(os.Args[2:])
 			//初始化
 			c.Init()
 			//运行
