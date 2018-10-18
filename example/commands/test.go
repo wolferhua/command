@@ -7,7 +7,7 @@ import (
 
 type Test struct {
 	command.Cmd
-	b bool
+	B bool
 }
 
 func (c *Test) GetName() string {
@@ -19,8 +19,9 @@ func (c *Test) GetDesc() string {
 }
 func (c *Test) Run() {
 	fmt.Println("test is run")
+	fmt.Println(c.B)
 }
 
 func (c *Test) SetFlags() {
-	c.BoolVar(&c.b, "b", false, "bool test")
+	c.BoolVar(& (c.B), "b", false, "bool test")
 }
