@@ -7,10 +7,16 @@ go命令行管理工具，go 原生提供了flag管理命令行。使用起来�
 
 # 使用入门
 
+### 第〇步： 获取command
+
+```shell
+go get -u github.com/wolferhua/command
+```
+
 ### 第一步： 建立命令行文件目录
 
 ```shell
-mkdir commands
+mkdir -p project/commands
 ```
 
 ### 第二步： 创建命令文件 commands/test.go
